@@ -8,16 +8,16 @@
 /* Body styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #1f1f1f; /* Dark background for a sleek look */
+    color: #eaeaea; /* Light text for contrast */
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Header Styling */
 .header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #3a3a3a; /* Darker background */
+    color: #ff5722; /* Vibrant orange color for the header */
     padding: 40px 0;
     text-align: center;
     position: relative;
@@ -41,8 +41,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    border: 5px solid #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid #ff5722; /* Orange border to match header */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Section Styling */
@@ -54,7 +54,7 @@ body {
 
 .section h2 {
     font-size: 2.5rem;
-    color: #4CAF50;
+    color: #ff5722; /* Bold orange for section headings */
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -65,7 +65,7 @@ body {
     display: block;
     width: 50px;
     height: 3px;
-    background: #4CAF50;
+    background: #ff5722;
     margin: 10px auto;
 }
 
@@ -87,15 +87,18 @@ body {
 }
 
 .skills-list li {
-    background-color: #ffffff;
+    background-color: #2d2d2d; /* Darker card background */
     padding: 10px 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    color: #eaeaea; /* Light text color */
 }
 
 .skills-list li:hover {
     transform: scale(1.05);
+    background-color: #ff5722; /* Highlight with vibrant orange */
+    color: #fff; /* White text on hover */
 }
 
 /* Project Cards */
@@ -107,27 +110,30 @@ body {
 }
 
 .project-card {
-    background-color: #ffffff;
+    background-color: #2d2d2d; /* Dark background for project cards */
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 300px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    color: #eaeaea; /* Light text color */
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #ff5722; /* Highlight with orange on hover */
+    color: #fff; /* White text on hover */
 }
 
 .project-card h3 {
     font-size: 1.8rem;
-    color: #4CAF50;
+    color: #fff;
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #666;
+    color: #ddd; /* Light gray for project descriptions */
 }
 
 /* Contact List */
@@ -142,16 +148,17 @@ body {
 .contact-list li {
     font-size: 1.2rem;
     margin: 10px 0;
+    color: #ff5722; /* Vibrant color for contact list */
 }
 
 .contact-list a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #ff5722;
     transition: color 0.2s;
 }
 
 .contact-list a:hover {
-    color: #333;
+    color: #eaeaea; /* Change to light text color on hover */
     text-decoration: underline;
 }
 
@@ -161,6 +168,7 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: 1.1rem;
 }
 
 /* Smooth Scroll */
