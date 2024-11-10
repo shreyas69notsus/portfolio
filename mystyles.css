@@ -175,3 +175,12 @@ html {
 
     .skills-list {
         flex-direction:
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
