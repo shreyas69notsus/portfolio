@@ -8,56 +8,44 @@
 /* Body styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1f1f1f; /* Dark background for a sleek look */
-    color: #eaeaea; /* Light text for contrast */
+    background-color: #f0f0f0;
+    color: #333;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* Header Styling */
 .header {
-    background-color: #3a3a3a; /* Darker background */
-    color: #ff5722; /* Vibrant orange color for the header */
-    padding: 40px 0;
+    background-color: #3B3B3B;
+    color: white;
+    padding: 50px 0;
     text-align: center;
     position: relative;
     animation: slideInDown 1.5s ease;
 }
 
-@keyframes slideInDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .header .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
-    border: 5px solid #ff5722; /* Orange border to match header */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Section Styling */
 .section {
     padding: 60px 0;
     text-align: center;
-    transition: all 0.3s ease-in-out;
 }
 
 .section h2 {
-    font-size: 2.5rem;
-    color: #ff5722; /* Bold orange for section headings */
+    font-size: 2.8rem;
+    color: #1A1A1A;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
+    font-weight: 600;
 }
 
 .section h2::after {
@@ -65,7 +53,7 @@ body {
     display: block;
     width: 50px;
     height: 3px;
-    background: #ff5722;
+    background: #4CAF50;
     margin: 10px auto;
 }
 
@@ -74,6 +62,19 @@ body {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Education List */
+.education-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.education-list li {
+    margin: 10px 0;
 }
 
 /* Skills List */
@@ -87,53 +88,41 @@ body {
 }
 
 .skills-list li {
-    background-color: #2d2d2d; /* Darker card background */
+    background-color: #fff;
     padding: 10px 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    color: #eaeaea; /* Light text color */
 }
 
 .skills-list li:hover {
     transform: scale(1.05);
-    background-color: #ff5722; /* Highlight with vibrant orange */
-    color: #fff; /* White text on hover */
 }
 
 /* Project Cards */
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-
 .project-card {
-    background-color: #2d2d2d; /* Dark background for project cards */
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     width: 300px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    color: #eaeaea; /* Light text color */
+    margin: 15px;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    background-color: #ff5722; /* Highlight with orange on hover */
-    color: #fff; /* White text on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
     font-size: 1.8rem;
-    color: #fff;
+    color: #333;
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #ddd; /* Light gray for project descriptions */
+    color: #666;
 }
 
 /* Contact List */
@@ -148,17 +137,16 @@ body {
 .contact-list li {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: #ff5722; /* Vibrant color for contact list */
 }
 
 .contact-list a {
     text-decoration: none;
-    color: #ff5722;
+    color: #1A1A1A;
     transition: color 0.2s;
 }
 
 .contact-list a:hover {
-    color: #eaeaea; /* Change to light text color on hover */
+    color: #4CAF50;
     text-decoration: underline;
 }
 
@@ -168,7 +156,6 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    font-size: 1.1rem;
 }
 
 /* Smooth Scroll */
@@ -187,7 +174,4 @@ html {
     }
 
     .skills-list {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+        flex-direction:
