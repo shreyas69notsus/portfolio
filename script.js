@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Example for adding a dynamic greeting based on the time of day
+// Dynamic greeting based on the time of day
 window.onload = function() {
     const greeting = document.createElement('h2');
     const currentHour = new Date().getHours();
